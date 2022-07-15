@@ -8,12 +8,7 @@
     --colorquinto:rgb(3, 10, 70);
     --fuentePrincipla: 'Ubuntu', sans-serif;
 }
-ul li a{
 
-}
-.ejemplo p{
-    
-}
 html{
     font-size: 62.5%;
 }
@@ -41,14 +36,11 @@ max-width: 120rem;
     display: flex;
     justify-content: space-between;
     align-items:center ;
-position: ;
+
 
 }
-:no-ch
-img{
-    border-style: 5px solid red;
-    border-inline-color:red ;
-}
+
+
 
 .navegacion-principal a{
     color: var(--colorPrimario);
