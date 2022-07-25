@@ -70,12 +70,24 @@ border-radius: 1rem;
 .w-sm-100{
     width: 100%;
 }
+@media(min-width: 411px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
 @media(min-width:780px ){
     .boton  { width: auto;
     }
 }
-  
- 
+  @media(min-width:411 ){
+    .servicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        } 
+  }
 
 @media(max-width:411px ){
     .navegacion-principal{
