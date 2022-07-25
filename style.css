@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 :root{
-    --colorPrimario:#b1c1c2;
+    --colorPrimario:hwb(128 92% 5% / 0.993);
     --colorSegundario:rgb(122, 43, 43);
     --colorTercero:rgb(68, 207, 131);
     --colorCuarto:rgb(178, 206, 19);
     --colorquinto:rgb(3, 10, 70);
     --color-nrg:rgb(12, 12, 12);
+    --colorformu:#1a0530;
+    --colorFormula:
     --fuentePrincipla: 'Ubuntu', sans-serif;
 }
 
@@ -37,6 +39,7 @@ h1,h2,h3{
 
 .contenido-hero h2,p{
     color: var(--colorPrimario);
+    text-transform:capitalize
 }
 
 .sobra{
@@ -59,13 +62,29 @@ border-radius: 1rem;
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
+}
+
+/*utilidades**/
+.w-sm-100{
+    width: 100%;
 }
 @media(min-width:780px ){
-    .boton{
+    .w-sm-100{
         width: auto;
     }
-    
 }
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+    .boton:hover{
+        cursor: pointer;
+    }
+    
+
 .header{
     text-align: center;
     font-size: 7rem;
@@ -93,12 +112,14 @@ max-width: 120rem;
     text-decoration: none;
     font-size: 2rem;
     font-weight:700;
-    border-style:var(--colorquinto)
+    border-style:var(--colorquinto);
+    text-transform: uppercase;
 
 }
 .navegacion-principal a:hover{
 background-color:var(--colorCuarto); 
 color: var(--colorSegundario);
+
 }
 .hero{
     background-image: url(./img/imagen-dip.PNG);
@@ -115,7 +136,7 @@ color: var(--colorSegundario);
     justify-content: center;
     position: absolute;
     background-color: rgb(0 0 0);
-    opacity: 0.9;
+    opacity: 0.7;
    width: 100%;
    height: 100%;
 
@@ -150,4 +171,48 @@ align-items: center;
     font-weight: bold;
     line-height: 2;
     text-align: center;
+}
+/*contactos */
+.formulario{
+    background-color: var(--colorformu);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+
+.formulario fieldset{
+    border:none;
+   
+}
+.formulario legend{
+    text-align: center;
+    color: var(--colorCuarto);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.contenedor-campos{
+
+}
+.campos{
+margin-bottom:1rem ;
+}
+.campos label{
+margin-bottom: .5rem;
+font-weight: bold;
+color: var(--colorPrimario);
+display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.foooter{
+    text-align: center;
+    font-size: 3rem;
 }
