@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root{
+    --colorPrimario:hwb(310 9% 35% / 0.993);
+    --colorSegundario:rgb(172, 97, 159);
+    --colorTercero:#eee6e6;
+    --colorCuarto:rgb(178, 206, 19);
+    --colorquinto:rgb(3, 10, 70);
+    --color-nrg:rgb(12, 12, 12);
+    --colorformu:#d4d0da;
+    --colorFormula:#ee1c09;
+    --fuentePrincipla: 'Ubuntu', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;   /*hack para Box Model*/
+    scroll-snap-type:y mandatory ;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-size: 16px;
+    background-color: var(--color-nrg);
+    line-height: 1.5;
+}
+
+p{
+font-size: 1.8rem;
+font-family: Arial, Helvetica, sans-serif;
+color:var(--colorTercero)
+}
+a{
+text-decoration: none;
+}
+img{
+ max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--colorCuarto);
+    font-family: var(--fuentePrincipla);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size:3.2rem ;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+ margin: 3rem 0;
+ border-radius: 25rem;  
+}
+/*navegacion*/
+.navegacion{
+background-color: var(--colorTercero);
+padding: 1rem 0;
+display: flex;
+justify-content: center;
+gap: 2rem;
+
+}
+.navegacion__enlace{
+    font-family: var(--fuentePrincipla);
+    color: var(--color-nrg);
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.navegacion__enlace--modificador, .navegacion__enlace:hover{
+    color: var(--colorFormula);
+}
+
+/*Seccion footer*/
+.footer{
+background-color:var(--colorFormula);
+padding: 1rem;
+margin-top: 2rem;
+
+}
+.footer__texto{
+    color: var(--colorformu);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*productos*/
+.producto{
+
+}
+.producto__imagen{
+
+}
+.producto__iformacion{
+
+}
+.producto__nombre{
+
+}
+.producto__precio{
+    
+}
