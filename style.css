@@ -134,7 +134,7 @@ color: var(--colorSegundario);
 
 }
 .hero{
-    background-image: url(./img/imagen-dip.PNG);
+    background-image: url(../ob-curso-git/diplomas/matrix3.0.gif);
     background-repeat:no-repeat ;
     background-size: cover;
     height: 45rem;
@@ -157,10 +157,10 @@ color: var(--colorSegundario);
 
 }
 
-.servicios, .navegacion-principal,.formulario{
+/*.servicios, .navegacion-principal,.formulario{
     scroll-snap-align: center;
-    scroll-snap-stop: always;
-}
+   scroll-snap-stop: always;
+}*/
 /*servisiop*/
 @media(min-width:768px ){
     

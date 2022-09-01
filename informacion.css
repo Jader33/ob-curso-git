@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+:root{
+    --colorPrimario:hwb(128 92% 5% / 0.993);
+    --colorSegundario:rgb(122, 43, 43);
+    --colorTercero:rgb(68, 207, 131);
+    --colorCuarto:rgb(178, 206, 19);
+    --colorquinto:rgb(3, 10, 70);
+    --color-nrg:rgb(12, 12, 12);
+    --colorformu:#1a0530;
+    --colorFormula:
+    --fuentePrincipla: 'Ubuntu', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;   /*hack para Box Model*/
+    scroll-snap-type:y mandatory ;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-size: 16px;
+    font-family: var(--fuentePrincipla);
+    background-image: linear-gradient(to top, var(--colorTercero) 0%, var(--colorPrimario) 10%);
+}
+h1{
+    font-size: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.enlace-principal {
+    text-decoration:none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+
+
+.enlace-principal_li {
+    font-size: 2rem;
+    
+    font-weight: bold;
+   list-style: none;
+   text-transform:uppercase;
+    
+}
+a{
+    text-decoration: none;
+}
