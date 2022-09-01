@@ -134,7 +134,7 @@ color: var(--colorSegundario);
 
 }
 .hero{
-    background-image: url(../ob-curso-git/diplomas/matrix3.0.gif);
+    background-image: url(./diplomas/matrix3.0.gif);
     background-repeat:no-repeat ;
     background-size: cover;
     height: 45rem;
