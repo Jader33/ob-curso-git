@@ -196,6 +196,21 @@ align-items: center;
     text-align: center;
 }
 /*contactos */
+
+.error{
+    background-color: rgb(206, 19, 19);
+    text-align: center;
+    padding: 1rem;
+    color: var(--colorPrimario);
+    text-transform: uppercase;
+}
+.correto{
+    background-color: rgb(57, 20, 220);
+    text-align: center;
+    padding: 1rem;
+    color: var(--colorFormula);
+    text-transform: uppercase;
+}
 .formulario{
     background-color: var(--colorformu);
     width: min(60rem, 100%);
@@ -211,7 +226,7 @@ align-items: center;
 }
 .formulario legend{
     text-align: center;
-    color: var(--colorCuarto);
+    color: var(--colorPrimario);
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
