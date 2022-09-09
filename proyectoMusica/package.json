@@ -4,7 +4,9 @@
   "description": "proyecto con Gulp SASS Y HTML",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp  tarea",
+    "css":"gulp css"
   },
   "keywords": [
     "SASS",
@@ -13,6 +15,8 @@
   "author": "JHON JADER SANCHEZ",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.54.8"
   }
 }

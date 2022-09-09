@@ -1,10 +1,10 @@
 const enlace = document.querySelectorAll(".na")
 enlace[0].textContent= "inicio"
-enlace[1].textContent= "sobre mi"
-enlace[2].textContent = "academicos "
-enlace[3].textContent="experiencia laboral"
+enlace[1].textContent= "sobre mí"
+enlace[2].textContent = "acádemicos "
+enlace[3].textContent="experiencia y proyectos"
 const  texth2 = document.querySelector(".hero-contenido-h2")
-texth2.textContent="mi curriculo"
+texth2.textContent="mi currículo"
 console.log(texth2)
 
 const  datos  = {
@@ -37,10 +37,10 @@ const  datos  = {
 
    const {nombre,telef,email,textarea} =datos;
    if(nombre === ""|| telef ===""|| email ===""|| textarea===""){
-      mostraAlerta("todos los campos son oblogatorios","error")
+      mostraAlerta("Todos los campos son oblogatorios","error")
        return;
    }
-  mostraAlerta("todo se envio perfecto",true)
+  mostraAlerta("Todo se envió perfecto",true)
   });
 
  
