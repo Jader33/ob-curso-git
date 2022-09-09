@@ -2,7 +2,7 @@ const enlace = document.querySelectorAll(".na")
 enlace[0].textContent= "inicio"
 enlace[1].textContent= "sobre mí"
 enlace[2].textContent = "acádemicos "
-enlace[3].textContent="experiencia y proyectos"
+enlace[3].textContent="experiencias y proyectos"
 const  texth2 = document.querySelector(".hero-contenido-h2")
 texth2.textContent="mi currículo"
 console.log(texth2)
