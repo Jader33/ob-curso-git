@@ -1,5 +1,9 @@
-$rojo: rgb(57, 75, 175);
+//forma vieja de importar 
+//@import "base/variables";
+//@import "contenido/contenido";
+//forma nueva 
+@use  "base";
+@use "layout";
 
-body{
-    background-color: $rojo;
-}
+
+
