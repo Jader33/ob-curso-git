@@ -51,15 +51,21 @@ src("src/img/**/*.{png,jpg}")
 
     done();
 }
-
+function javascript(done){
+    src("src/js/**/*.js")
+    .pipe(dest("build/js"));
+    done();
+}
 
 function dev(done){
-    watch("src/scss/**/*.scss",css)
+    watch("src/scss/**/*.scss",css);
+    watch("src/js/**/*.js",javascript);
 
     done();
 }
 exports.css= css;
+exports.js =javascript;
 exports.imagenes=imagenes;
 exports.versionwebp=versionwebp;
 exports.versionAvif= versionAvif;
-exports.dev =parallel(imagenes,versionwebp,versionAvif, dev);
+exports.dev =parallel(imagenes,versionwebp,versionAvif,javascript, dev);
